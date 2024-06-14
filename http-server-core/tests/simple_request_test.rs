@@ -5,7 +5,7 @@ use http_server_core::prelude::*;
 fn simple_request() {
     let request = Request::builder()
         .uri("http://example.com/hello")
-        .body("".to_string())
+        .body("world".to_string())
         .unwrap();
     let response = Http::process(request);
 
